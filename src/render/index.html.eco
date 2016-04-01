@@ -51,13 +51,12 @@
         <h1 class="blog-title">Funcy Programmer Blog</h1>
         <p class="lead blog-description">Write clean, maintainable and well tested code.</p>
       </div>
-      
+
       <hr />
 
-      <div class="row">
         <% for post in @getPageCollection("posts").toJSON(): %>
           <div class="col-sm-8 blog-main">
-            
+
             <div class="blog-post">
               <h2 class="blog-post-title"><a href="<%= post.url %>"><%- post.title %></a></h2>
               <p class="blog-post-meta"><%- post.date %> by <a href="#">Goshujin-sama</a></p>
@@ -69,9 +68,9 @@
           </div>
         <% end %>
 
-        
+
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
+          <div class="sidebar-module">
             <h4>About</h4>
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
@@ -101,11 +100,10 @@
             </ol>
           </div>
         </div>
-       
+
 
       <!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
+      <!-- /.row -->
 
     </div><!-- /.container -->
 

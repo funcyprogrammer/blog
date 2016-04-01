@@ -166,7 +166,7 @@ h6, .h6 {
 }
 
 .blog-sidebar {
-  position: static;
-  margin-top: -180px;
-  width: 228px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
