@@ -164,3 +164,9 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.blog-sidebar {
+  position: static;
+  margin-top: -180px;
+  width: 228px;
+}
