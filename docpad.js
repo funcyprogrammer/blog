@@ -21,6 +21,12 @@ var docpadConfig = {
 		ghpages: {
 			deployBranch: 'master',
 			deployRemote: 'pages'
+		},
+		tags: {
+			extension: '.html.eco',
+			injectDocumentHelper: function (doc) {
+					
+			}
 		}
 	}
 }
