@@ -33,15 +33,7 @@
 
   <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="/">Home</a>
-          <a class="blog-nav-item" href="#">Projects</a>
-          <a class="blog-nav-item" href="#">About</a>
-        </nav>
-      </div>
-    </div>
+    <%- @partial('navbar') %>
 
     <div class="container">
 
@@ -72,32 +64,7 @@
           </nav>
 
         </div>
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>Recent Articles</h4>
-            <ol class="list-unstyled">
-              <% for post in @getCollection('posts').toJSON().slice(0,8): %>
-                <li><a href="<%= post.url %>"><%= post.title %></a></li>
-              <% end %>
-            </ol>
-          </div>
-          <div class="sidebar-module">
-            <h4>Archives</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">Test</a></li
-            </ol>
-          </div>
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
-
+        <%- @partial('sidebar') %>
       </div><!-- /.row -->
 
     </div><!-- /.container -->
