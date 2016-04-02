@@ -16,6 +16,12 @@ var docpadConfig = {
 
 			return postList;
 		}
+	},
+	plugins: {
+		ghpages: {
+			deployBranch: 'master',
+			deployRemote: 'pages'
+		}
 	}
 }
 
