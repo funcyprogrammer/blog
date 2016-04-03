@@ -25,7 +25,7 @@ var docpadConfig = {
 		tags: {
 			extension: '.html.eco',
 			injectDocumentHelper: function (doc) {
-					
+					doc.setMeta({layout: 'tags'});
 			}
 		}
 	}
